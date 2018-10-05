@@ -9,8 +9,6 @@ var CardAmount = function(selector) {
    - render content
 */
 CardAmount.prototype.setCardData = function(data, qtd) {
-    console.log('data', data);
-    console.log('qtd', qtd);
     /*
       - check if has content to render
       - show/hide/close
