@@ -1,2 +1,2 @@
-# card-amount
+# Card Amount component
 Card component
