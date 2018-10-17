@@ -1,0 +1,26 @@
+{
+  "name": "cardamount",
+  "version": "1.0.0",
+  "description": "Card component",
+  "main": "card-amount.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoferreirades/card-amount.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardoferreirades/card-amount/issues"
+  },
+  "homepage": "https://github.com/ricardoferreirades/card-amount#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

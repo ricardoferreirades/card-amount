@@ -1,0 +1,38 @@
+.card-amount {
+    width: 200px;
+    background: #fff;
+    color: #666;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #ccc;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 10px;
+    max-height: 150px;
+}
+
+.card-amount.hide {
+    display: none;
+}
+
+.card-amount .card-amount__title {
+    margin: 0;
+    padding: .5em;
+    background: blue;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.card-amount .card-amount__amount-quantity {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #ffffff;
+}
+
+.card-amount .card-amount__amount {
+    text-align: center;
+}

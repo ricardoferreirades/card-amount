@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/card-amount.css">
+</head>
+<body>
+    <!-- card template -->
+  <div data-card>
+      <h3 data-title></h3>
+    <span data-amount-quantity></span>
+      <p data-amount></p>
+  </div>
+  
+  <!-- target items to update the card -->
+  <div>
+      <label for="check1">
+          <input type="checkbox" id="check1" value="10.00" data-target> R$ 10,00
+      </label>
+
+      <label for="check2">
+        <input type="checkbox" id="check2" value="11.23" data-target> R$ 11,23
+    </label>
+
+    <label for="check3">
+        <input type="checkbox" id="check3" value="12.40" data-target> R$ 12,40
+    </label>
+  </div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../card-amount.js"></script>
+    <script>
+        $(function() {
+            // declare variables
+            var cardAmount, $btn, sum, selected;
+
+            // initializing card
+            cardAmount = new CardAmount({
+                card: '[data-card]',
+                title: '[data-title]',
+                titleValue: 'Card',
+                cardPosition: '50%',
+                data: '[data-amount]',
+                amountQuantity: '[data-amount-quantity]',
+            });
+
+            // items to update the card value
+            $target = $('[data-target]');
+
+            // initial value
+            sum = 0;
+            selected = 0;
+
+            // inserting values on card
+            $target.bind('click', function() {
+                var target = this;
+                var amount;
+
+                // add or removing value
+                if(target.checked) {
+                    sum += parseFloat(target.value);
+                    selected++;
+                } else {
+                    sum -= parseFloat(target.value);
+                    selected--;
+                }
+                
+                // updating data value and selected intems
+                cardAmount.setCardData(sum, selected);
+            });
+        });
+    </script>
+</body>
+</html>
