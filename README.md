@@ -20,7 +20,7 @@ card-amount.js.
 To initialize the plugin call the 'new CardAmount(options)', where options is an object configuration to get the component reference.
 
 | Syntax | type | Description |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | card | string | the DOM attribute element that represents the card. |
 | title | string | the DOM attribute element that represents the title of the card. |
 | titleValue | string | The card's title |
