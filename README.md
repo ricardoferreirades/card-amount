@@ -1,5 +1,10 @@
 # Card Amount component
-Card component
+
+### Instalation
+
+```
+import jquery.js and card-amount.js
+```
 
 | Syntax | Description |
 | ----------- | ----------- |
