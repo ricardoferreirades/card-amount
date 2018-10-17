@@ -2,10 +2,21 @@
 
 ### Instalation
 
+clone the project and run:
+
 ```
-import jquery.js and card-amount.js
+npm install.
+```
+### Dependencies
+
+Import the following files to your project:
+
+```
+jquery.min.js
+card-amount.js.
 ```
 
+### Initialization
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
