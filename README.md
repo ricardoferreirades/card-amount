@@ -26,4 +26,4 @@ To initialize the plugin call the 'new CardAmount(options)', where options is an
 | titleValue | string | The card's title |
 | cardPosition | css unities | Position of the card verticaly |
 | data | number | Value to  show on the card |
-| amountQuantity | number | Items selected
+| amountQuantity | number | Items selected |
