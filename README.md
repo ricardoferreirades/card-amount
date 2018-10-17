@@ -5,7 +5,7 @@
 clone the project and run:
 
 ```
-npm install.
+npm install
 ```
 ### Dependencies
 
